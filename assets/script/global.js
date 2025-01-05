@@ -2,6 +2,18 @@ if (screen.width <= 700) {
     // Mobile
 }
 
+/* NAVBAR */
+const NAVBAR = document.getElementById("navbar");
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) NAVBAR.classList.add('hidden');
+    else NAVBAR.classList.remove('hidden');
+    
+    lastScrollY = window.scrollY;
+});
+
+
 
 /* PRODUCT DESCRIPTION */
 const PRODUCT_DESC_SELECTOR = document.getElementById("product_desc_selector")
@@ -11,7 +23,7 @@ var PRODUCT_DESC_IDX = 1;
 const MESSAGES = [
     'Soteria uses state-of-the-art AI technology to constantly scan video feeds, recognizing people and potential weapons or threats.<br><br>Unlike other security technology on the market, Soteria can quickly detect specific weapons and threats and send the appropriate alert.',
     'School security, homeowners, and community managers have 24/7 access to a live-updating admin panel.<br><br>Not only can they analyze video recordings and set up specific detection alerts for emergencies, but they can also access a detailed log of notable detection events and specify custom responses.',
-    'In a school or company setting, admins can provide students and/or employees with vital security statuses, ensuring peace of mind and providing instant alerts in the case of an intruder or threat.'
+    'In a school or company setting, Soteria provides administrators with real-time security updates to ensure the safety of students or employees.<br><br>During an emergency, Soteria instantly sends alerts to individuals in the affected area and uses digital mapping to pinpoint the exact location of the danger, enabling quick and accurate responses.'
 ];
 
 const IMAGES = [
