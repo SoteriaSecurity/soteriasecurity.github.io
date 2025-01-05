@@ -7,23 +7,33 @@
     <meta name="description" content="Soteria Placeholder">
 
     <title>Soteria Security</title>
-    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="assets/style/global.css">
+    <link rel="stylesheet" href="assets/style/landing.css">
   </head>
   <body>
     <main>
-      <div id="header">
-        <img src="assets/images/logo_big.png">
-        <div id="header_text">
-          <p id="header_title">Using<br><span class="header_accent">Today's Technology</span><br><br> to stop <br><span class="header_accent">Tomorrow's Tragedy</span></p>
-          <div id="header_underline"></div>
-        </div>
-        </div>
-      
+      <div id="navbar">
+        <img id="navbar_logo" src="assets/images/logo.svg" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        <a class="navbar_link active" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Home</a>
+        <a class="navbar_link" href="features.html">Features</a>
+        <a class="navbar_link" href="impact.html">Impact</a>
+        <a class="navbar_link" href="about.html">About</a>
+        <a class="navbar_link" href="pricing.html">Pricing</a>
+        <button id="navbar_contact" onclick="window.open('https:\/\/idp7al2lb7x.typeform.com/to/CzxPzDxT', '_blank')">Reserve a Demo</button>
+      </div>
+
+      <div id="landing">
+        <img id="landing_logo" src="assets/images/logo.svg">
+        <p id="landing_title">Soteria Security</p>
+        <p id="landing_subtitle">Intelligence to Prevent. Power to Protect.</p>
+      </div>
+
       <div id="overview">
         <p id="overview_smalltitle">Real-Time Security</p>
         <br>
@@ -31,25 +41,25 @@
         <hr id="overview_underline">
 
         <div id="overview_icons">
-          <div class="overview_iconwrapper">
+          <div class="overview_iconwrapper" id="overview_icon1">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white">
               <path d="M574-111q-12 15-30.92 16.5Q524.15-93 511-105L340-248q-56-47-81-114.2-25-67.21-11-137.8l-63-51q-13-11-15.5-27t6.5-30l8-10h-67v114q0 34.7-23.94 58.85Q69.11-421 34-421v-473q35 0 59 24.5t24 58.5v110h135l70-85q12-14 30.5-15.5T385-791l62 51q67-27 137.5-14T712-694l170 143q14 11 15 29.5T887-489L574-111Zm-39-83 265-320-143-117q-47-39-108-38.5T430-646l-69-57-94 113 69 56.04Q323-472 333.5-412q10.5 60 58.5 99l143 119Zm-1-255Z"/>
             </svg>
           </div>
 
-          <div class="overview_iconwrapper">
+          <div class="overview_iconwrapper" id="overview_icon2">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white">
               <path d="M55-175v-93h410v93H55Zm0-219v-93h242v93H55Zm0-219v-93h242v93H55Zm793 419L691.83-355q-26.18 20-55.39 29.5Q607.22-316 575-316q-88.34 0-149.67-62.29-61.33-62.29-61.33-152Q364-620 425.47-683q61.46-63 149.5-63 88.03 0 149.53 62.89T786-531q0 33.34-9 63.67t-28 55.46L906-251l-58 57ZM574.26-398q54.41 0 92.57-38.38 38.17-38.38 38.17-94T667.29-625q-37.71-39-91.58-39-54.71 0-92.21 38.67-37.5 38.67-37.5 93.92 0 56.41 37.14 94.91t91.12 38.5Z"/>
             </svg>
           </div>
 
-          <div class="overview_iconwrapper">
+          <div class="overview_iconwrapper" id="overview_icon3">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white">
-              <path d="M480-404q-40 0-68-28t-28-68q0-40 28-68t68-28q40 0 68 28t28 68q0 40-28 68t-68 28Zm.77 227Q326-177 202-267 78-357 17-500q61-143 185-233t278-90q155 0 280.5 91.47T945-496h-87q-53-110-154.69-177Q601.63-740 480-740q-120.48 0-221.24 65.5T104-500q54 109 154.74 174.5Q359.48-260 479.94-260q24.56 0 47.73-2.5Q550.83-265 573-271v84.82Q551-181 527.82-179t-47.05 2ZM480-330q28.09 0 53.77-8.55Q559.44-347.11 580-362q11-27 27-50.5t39-41.5q2-12 3-22.8t1-23.2q0-70.83-49.62-120.42Q550.76-670 479.88-670T359.5-620.38Q310-570.76 310-499.88t49.58 120.38Q409.17-330 480-330Zm1-170Zm207 394q-14 0-24.5-10T653-141v-120q0-14 11.5-24.5T693-296v-45q0-30.94 22.04-52.97 22.05-22.03 53-22.03Q799-416 821-393.97T843-341v45q17 0 28.5 10.5T883-261v120q0 15-10.5 25T848-106H688Zm35-190h90v-44.91Q813-360 800.09-373q-12.91-13-32-13T736-373.06q-13 12.93-13 32.06v45Z"/>
+              <path d="M160-160q-33 0-56.5-23.5T80-240v-120h80v120h120v80H160Zm192-160 40-204-72 28v136h-80v-188l158-68q35-15 51.5-19.5T480-640q21 0 39 11t29 29l40 64 8 12q4 6 9 11-49 32-81 82.5T483-320H352Zm188-340q-33 0-56.5-23.5T460-740q0-33 23.5-56.5T540-820q33 0 56.5 23.5T620-740q0 33-23.5 56.5T540-660ZM80-760v-120q0-33 23.5-56.5T160-960h120v80H160v120H80Zm720 0v-120H680v-80h120q33 0 56.5 23.5T880-880v120h-80ZM760-80q-83 0-141.5-58.5T560-280q0-83 58.5-141.5T760-480q83 0 141.5 58.5T960-280q0 83-58.5 141.5T760-80Zm-20-160h40v-160h-40v160Zm20 80q8 0 14-6t6-14q0-8-6-14t-14-6q-8 0-14 6t-6 14q0 8 6 14t14 6Z"/>
             </svg>
           </div>
 
-          <div class="overview_iconwrapper" id="overview_icons_action">
+          <div class="overview_iconwrapper" id="overview_icon4">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white">
               <path d="M107.56-561.93q0-93.12 41.22-170.88Q190-810.57 259.59-862.22l39.82 53.26q-57.19 42.72-91.29 106.68-34.1 63.97-34.1 140.35h-66.46Zm678.66 0q0-76.44-34.26-140.4-34.27-63.97-91.37-106.63l40.06-53.26q69.3 51.76 110.66 129.43 41.36 77.66 41.36 170.86h-66.45Zm-632.2 367.91v-68.13h77.85v-298.02q0-86.08 50.34-154.77 50.33-68.69 133.72-86.41v-20.56q0-26.8 18.69-45.55 18.69-18.76 45.38-18.76t45.38 18.76q18.69 18.75 18.69 45.55v20.56q83.39 17.48 133.84 86.25 50.46 68.77 50.46 154.93v298.02h77.85v68.13h-652.2ZM480-501.04Zm.12 429.17q-33.83 0-57.93-24.13t-24.1-58.02h164.06q0 33.95-24.15 58.05-24.15 24.1-57.88 24.1ZM300-262.15h360v-298.02q0-74.76-52.5-127.38Q555-740.17 480-740.17t-127.5 52.62Q300-634.93 300-560.17v298.02Z"/>
             </svg>
@@ -63,348 +73,43 @@
           <div class="overview_feature">
             
             <p class="overview_feature_title">24/7 Analysis</p>
-            <p class="overview_feature_desc">Lorem Ipsum </p>
+            <p class="overview_feature_desc">Soteria operates around the clock, continuously analyzing video feeds and sensor data to detect potential threats and hazards in real time.</p>
           </div>
 
           <div class="overview_feature">
             <p class="overview_feature_title">Detailed Logs</p>
-            <p class="overview_feature_desc">Lorem Ipsum </p>
+            <p class="overview_feature_desc">Soteria keeps meticulous records of all detected incidents, providing security teams and investigations with invaluable information.</p>
           </div>
 
           <div class="overview_feature">
             <p class="overview_feature_title">Peace of Mind</p>
-            <p class="overview_feature_desc">Lorem Ipsum </p>
+            <p class="overview_feature_desc">Not only can admins ensure the safety of communities with Soteria, the public can also sign up for safety statuses and emergency notifications.</p>
           </div>
 
           <div class="overview_feature overview_feature_highlight">
             <p class="overview_feature_title">Immediate Action</p>
-            <p class="overview_feature_desc">Lorem Ipsum </p>
+            <p class="overview_feature_desc">When Soteria detects a threat, it doesn’t just send a notification — it triggers immediate action, assessing the threat severity and alerting law enforcment if necessary.</p>
           </div>
         </div>
       </div>
 
-      <hr class="section_separator">
-      
-      <div id="product">
-        <p id="product_bigtitle">
-          Using <span class="product_blue">AI Detection</span>
-          for <span class="product_blue">Disaster Prevention</span>
-        </p>
-
-        <div id="product_wrapper">
-          <div id="product_view">
-            <img id="product_img1" src="assets/images/ekansh.jpg">
-            <img id="product_img2" src="assets/images/ekansh.jpg" style="opacity: 0;">
-            <img id="product_img3" src="assets/images/ekansh.jpg" style="opacity: 0;">
-          </div>
-
-          <div id="product_desc">
-            <div id="product_desc_selector">
-              <div id="product_desc_selector_bg"></div>
-
-              <div class="product_desc_selector_label" id="product_desc_selector_l1">
-                Analysis
-              </div>
-              <svg id="product_desc_selector_svg1" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M488-481 302-667l74-74 260 260-260 260-74-74 186-186Z"/></svg>
-              <div class="product_desc_selector_label" id="product_desc_selector_l2">
-                Admin Panel
-              </div>
-              <svg id="product_desc_selector_svg2" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M488-481 302-667l74-74 260 260-260 260-74-74 186-186Z"/></svg>
-              <div class="product_desc_selector_label" id="product_desc_selector_l3">
-                Public App
-              </div>
-            </div>
-
-            <p id="product_desc_text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat natus rerum soluta obcaecati ratione, laboriosam maxime, possimus id optio fugiat voluptas ipsum nulla cumque, perferendis aliquid corporis. Error, excepturi placeat?
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div id="story">
-        <p id="story_title">In 2024, there were...</p>
-        <div id="story_stats">
-          <p class="story_stat">
-            <span class="story_stat_value">83</span>
-            <br>
-            School Shootings
-          </p>
-
-          <p class="story_stat">
-            <span class="story_stat_value">648+</span>
-            <br>
-            Deaths in Mass Shootings
-            <br>
-          </p>
-
-          <p class="story_stat">
-            <span class="story_stat_value">80%</span>
-            <br>
-            Mass Shootings in Locations with Cameras
-          </p>
+      <div id="footer">
+        <img id="footer_img" src="assets/images/logo.svg">
+        <div id="footer_text">
+          <p id="footer_name">Soteria<br>Security</p>
+          <p id="footer_slogan">Slogan Goes Here</p>
         </div>
 
-        <p id="story_impactful_point">It doesnt' have to<br> be like this.</p>
-        <hr id="story_impactful_point_underline">
+        <p id="footer_copyright">© 2025 Copyright Soteria. All rights reserved.</p>
 
-        <p id="story_desc">
-          Security should be a priority, not an afterthought. Unlike traditional systems,
-          which often require intensive human labor and large investments, <span class="accent">Soteria</span> combines 
-          <span class="accent">already-existing camera technology</span> with <span class="accent">advanced machine-learning
-          algorithms</span> to offer faster, cheaper, and more accurate responses.
-          <br>
-          <br>
-          In a crisis, <span class="accent">every second counts</span>. Soteria constantly monitors <span class="accent">every</span>
-          connected camera for threats, 24/7, and will instantly send an alert if a threat is found. It might be a difference of 20
-          seconds between Soteria's detection and manual intervention, but in a life-or-death scenario, those <span class="accent">20 seconds</span> could mean
-          <span class="accent">20 lives</span>.
-          <br>
-          <br>
-          We didn't create Soteria to cut down security costs and make a dollar in the process. Soteria saves <span class="accent">time</span> and saves <span class="accent">lives</span> -<br> and <span class="accent">you can't put a price on living</span>. 
-        </p>
-      </div>
-
-      <hr class="section_separator">
-
-      <div id="team">
-        <p id="team_title"><span id="team_title_leftbracket"><</span>Meet The Team<span id="team_title_rightbracket">/></span></p>
-        <p id="team_subtitle">We're an aspiring group of entrepeneurs who... [PLACEHOLDER]</p>
-
-        <div class="team_row">
-          <div class="team_member" id="tm_nathan">
-            <p class="team_member_name">Nathan Arega</p>
-            <p class="team_member_role">Chief Technology Officer</p>
-
-            <img class="team_member_pic" src="assets/images/ekansh.jpg">
-
-            <p class="team_member_bio">
-              Placeholder Bio
-            </p>
-          </div>
-
-          <div class="team_member" id="tm_omkar">
-            <p class="team_member_name">Omkar Bantanur</p>
-            <p class="team_member_role">Chief Engineering Officer</p>
-
-            <img class="team_member_pic" src="assets/images/ekansh.jpg">
-
-            <p class="team_member_bio">
-              Placeholder Bio
-            </p>
-          </div>
-
-          <div class="team_member" id="tm_ekansh">
-            <p class="team_member_name">Ekansh Dave</p>
-            <p class="team_member_role">Chief Business Officer</p>
-            
-            <img class="team_member_pic" src="assets/images/ekansh.jpg">
-
-            <p class="team_member_bio">
-              Placeholder Bio
-            </p>
-          </div>
+        <div id="footer_buttons">
+          <button onclick="window.open('https:\/\/idp7al2lb7x.typeform.com/to/RPdMPne5', '_blank')">Contact Us</button>
+          <button onclick="window.open('https:\/\/idp7al2lb7x.typeform.com/to/CzxPzDxT', '_blank')">Request a Demo</button>
         </div>
-
-        <div class="team_row">
-          <div class="team_member" id="tm_aryan">
-            <p class="team_member_name">Aryan Singh</p>
-            <p class="team_member_role">Chief ML Officer</p>
-
-            <img class="team_member_pic" src="assets/images/ekansh.jpg">
-
-            <p class="team_member_bio">
-              Placeholder Bio
-            </p>
-          </div>
-
-          <div class="team_member" id="tm_william">
-            <p class="team_member_name">William Park</p>
-            <p class="team_member_role">Chief Frontend Officer</p>
-
-            <img class="team_member_pic" src="assets/images/ekansh.jpg">
-
-            <p class="team_member_bio">
-              Placeholder Bio
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <br>
-      <br>
-      <hr class="section_separator">
-      <br>
-
-      <div id="pricing">
-        <p id="pricing_title">Pricing Plans</p>
-
-        <div id="pricing_plans">
-          <div style="display: none;">
-            <svg id="pricing_check" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00cc00"><path d="M379.15-247.31 156.62-469.85l41.61-41.23 180.92 180.93 383-383.39 41.62 41.62-424.62 424.61Z"/></svg>
-            <svg id="pricing_limited" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#0066ff"><path d="M282-453.54h396v-58.38H282v58.38ZM479.61-84q-81.4 0-153.42-31.44-72.02-31.44-125.65-85.05-53.63-53.61-85.09-125.73Q84-398.33 84-479.93q0-82.11 31.5-154.36 31.5-72.24 85.4-126.15 53.89-53.9 125.65-84.73Q398.3-876 479.49-876q82.17 0 154.72 30.82 72.55 30.81 126.24 84.71 53.68 53.89 84.62 126.27Q876-561.82 876-479.53q0 81.68-30.82 153.2-30.81 71.51-84.69 125.41-53.89 53.89-126.25 85.41Q561.88-84 479.61-84Zm.39-58.39q140.2 0 238.91-99.01 98.7-99.01 98.7-238.6 0-140.2-98.7-238.91-98.71-98.7-238.91-98.7-139.59 0-238.6 98.7Q142.39-620.2 142.39-480q0 139.59 99.01 238.6 99.01 99.01 238.6 99.01ZM480-480Z"/></svg>
-            <svg id="pricing_no" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff0000"><path d="m248.92-206.92-41-42L439-480 207.92-712.08l41-42L481-522l230.08-232.08 41 42L522-480l230.08 231.08-41 42L481-439 248.92-206.92Z"/></svg>
-          </div>
-
-          <div class="pricing_plan">
-            <p class="pricing_name" style="fill: var(--accent-color); color: var(--accent-color)">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480.21-332.23q69.64 0 118.6-49.17 48.96-49.17 48.96-118.81t-49.17-118.6q-49.17-48.96-118.81-48.96t-118.6 49.17q-48.96 49.17-48.96 118.81t49.17 118.6q49.17 48.96 118.81 48.96Zm-.63-55.92q-46.2 0-78.81-33.04-32.62-33.04-32.62-79.23 0-46.2 33.04-78.81 33.04-32.62 79.23-32.62 46.2 0 78.81 33.04 32.62 33.04 32.62 79.23 0 46.2-33.04 78.81-33.04 32.62-79.23 32.62Zm.47 183.15q-143.59 0-261.32-81.04Q101-367.08 43.54-500 101-632.92 218.68-713.96 336.35-795 479.95-795q143.59 0 261.32 81.04Q859-632.92 916.46-500 859-367.08 741.32-286.04 623.65-205 480.05-205ZM480-500Zm-.17 236.61q121.25 0 221.2-63.85Q800.98-391.09 854.46-500q-53.48-108.91-153.27-172.76-99.78-63.85-221.02-63.85-121.25 0-221.7 63.85Q158.02-608.91 104.92-500q53.1 108.91 153.39 172.76 100.28 63.85 221.52 63.85Z"/></svg>
-              Sentinel
-            </p>
-            
-            <p class="pricing_start">Starting at</p>
-            <p class="pricing_price"><span class="pricing_value">$10</span> / month</p>
-            <p class="pricing_target">For Homeowners & Families</p>
-
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Basic Threat Detection
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Instant Notifications
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_limited"></use></svg>
-              Covers 20 cameras
-            </p>
-            <p class="pricing_feature pricing_notinc">
-              <svg><use href="#pricing_no"></use></svg>
-              Radius-Based Alerts
-            </p>
-            <p class="pricing_feature pricing_notinc">
-              <svg><use href="#pricing_no"></use></svg>
-              Scenario-Specific Responses
-            </p>
-            <p class="pricing_feature pricing_notinc">
-              <svg><use href="#pricing_no"></use></svg>
-              Safety Status Broadcast
-            </p>
-            <p class="pricing_feature pricing_notinc">
-              <svg><use href="#pricing_no"></use></svg>
-              Data Analytics
-            </p>
-            <p class="pricing_feature pricing_notinc">
-              <svg><use href="#pricing_no"></use></svg>
-              Blind Spot Evaluation
-            </p>
-            <p class="pricing_feature pricing_notinc">
-              <svg><use href="#pricing_no"></use></svg>
-              Full Customization
-            </p>
-          </div>
-
-          <div class="pricing_plan">
-            <p class="pricing_name" style="fill: #009900; color: #009900">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480.02-84.39q-136.4-35.77-225.71-160.74Q165-370.11 165-521.01v-236.34l315-118.73 315 118.73v235.91q0 151.44-89.29 276.36-89.28 124.92-225.69 160.69Zm-.02-60.38Q591.92-182.23 664.27-287q72.34-104.77 72.34-234.29v-195.96L480-813.85l-256.61 96.6v195.96q0 129.52 72.34 234.29Q368.08-182.23 480-144.77Zm0-334.85Z"/></svg>
-              Paladin
-            </p>
-
-            <p class="pricing_start">Starting at</p>
-            <p class="pricing_price"><span class="pricing_value">$200</span> / month</p>
-            <p class="pricing_target">For Schools & Businesses</p>
-
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Advanced Threat Detection
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Instant Notifications
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Extra Camera Fees Covered
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Radius-Based Alerts
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Scenario-Specific Responses
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Safety Status Broadcast
-            </p>
-            <p class="pricing_feature pricing_notinc">
-              <svg><use href="#pricing_no"></use></svg>
-              Data Analytics
-            </p>
-            <p class="pricing_feature pricing_notinc">
-              <svg><use href="#pricing_no"></use></svg>
-              Blind Spot Evaluation
-            </p>
-            <p class="pricing_feature pricing_notinc">
-              <svg><use href="#pricing_no"></use></svg>
-              Full Customization
-            </p>
-          </div>
-
-          <div class="pricing_plan">
-            <p class="pricing_name" style="fill: #ffcc00; color: #ffcc00">
-              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480.02-84.39q-136.4-35.77-225.71-160.74Q165-370.11 165-521.01v-236.34l315-118.73 315 118.73v235.91q0 151.44-89.29 276.36-89.28 124.92-225.69 160.69Zm.5-508.84L238.69-405.15q19.85 71.84 65.19 132.11 45.35 60.27 107.43 95.89v-172.54h138.38v172.54q61.08-35.62 106.43-95.89 45.34-60.27 66.19-132.11L480.52-593.23ZM480-813.85l-256.61 96.66v196.11q0 11.8 1.19 25.85t3.19 25.85L480-665.77l253.23 196.39q1-11.43 2.19-25.62 1.19-14.18 1.19-26.08v-196.11L480-813.85Z"/></svg>
-              Aegis
-            </p>
-
-            <p class="pricing_start">Starting at</p>
-            <p class="pricing_price"><span class="pricing_value">$10k</span> / month</p>
-            <p class="pricing_target">For Districts</p>
-
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Advanced Threat Detection
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Instant Notifications
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Extra Camera Fees Covered
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Radius-Based Alerts
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Scenario-Specific Responses
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Safety Status Broadcast
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Data Analytics
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Blind Spot Evaluation
-            </p>
-            <p class="pricing_feature">
-              <svg><use href="#pricing_check"></use></svg>
-              Full Customization
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div id="contact">
-        <p id="contact_title">Request a Quote</p>
-        <p id="contact_subtitle">Work with us to choose a plan that's best for your community.</p>
-
-        <input id="contact_subj" placeholder="Soteria Demo Request" value="Soteria Demo Request">
-        <br>
-        <textarea id="contact_main" placeholder="Message Body">Hello, I'd like to request a demo of Soteria for my community. Some more details about my situation are: </textarea>
-        <br>
-        <button id="contact_send" onclick="send_email()">Send</button>
       </div>
     </main>
     
 
-    <script src="index.js"></script>
+    <script src="assets/script/index.js"></script>
   </body>
 </html>
