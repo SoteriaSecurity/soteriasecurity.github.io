@@ -173,3 +173,27 @@
     background: conic-gradient(#00000000 0deg, #00000000 90deg, #ff3333 135deg, #00000000 180deg,
     #00000000 270deg, #ff3333 315deg, #00000000 360deg);
 }
+
+#together {
+    margin-top: 0px;
+    margin-bottom: 125px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#together_title {
+    font-size: 60px;
+    margin-bottom: 20px;
+
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px;
+}
+
+#together_desc {
+    font-size: 30px;
+    width: 70vw;
+}

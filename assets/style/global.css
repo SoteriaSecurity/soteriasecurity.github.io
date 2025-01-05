@@ -44,6 +44,20 @@ button {
     cursor: pointer;
 }
 
+.accent {
+    color: var(--accent-color);
+    text-shadow: 0 0 2px currentColor, 0 0 4px currentColor;
+}
+
+.section_separator {
+    width: 90vw;
+
+    height: 1px;
+    border: none;
+
+    background: linear-gradient(to right, black 0%, white 20%, white 80%, black 100%);
+}
+
 /* NAVBAR */
 
 #navbar {

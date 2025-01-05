@@ -1,5 +1,29 @@
 /* PRICING */
 
+#whyus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+
+    margin-top: 100px;
+}
+
+#whyus_title {
+    font-size: 80px;
+    text-align: left;
+
+    margin-right: 10vw;
+    line-height: 90px;
+}
+
+#whyus_desc {
+    width: 40vw;
+    font-size: 30px;
+}
+
 #pricing_plans {
     display: flex;
     flex-direction: row;

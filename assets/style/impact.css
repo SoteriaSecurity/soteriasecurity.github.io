@@ -2,7 +2,7 @@
 /* SOTERIA'S STORY */
 
 #story_title {
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 40px;
 
     margin-bottom: 0px;
@@ -45,12 +45,18 @@
     font-size: 30px;
 
     margin-top: 100px;
-    margin-bottom: 100px;
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
-.accent {
-    color: var(--accent-color);
-    text-shadow: 0 0 2px currentColor, 0 0 4px currentColor;
+#story_finalimpact {
+    font-size: 60px;
+    margin-bottom: 200px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px;
 }
