@@ -6,13 +6,14 @@ if (screen.width <= 700) {
 const NAVBAR = document.getElementById("navbar");
 let lastScrollY = window.scrollY;
 
+/*
 window.addEventListener('scroll', () => {
     if (window.scrollY > lastScrollY) NAVBAR.classList.add('hidden');
     else NAVBAR.classList.remove('hidden');
     
     lastScrollY = window.scrollY;
 });
-
+*/
 
 
 /* PRODUCT DESCRIPTION */

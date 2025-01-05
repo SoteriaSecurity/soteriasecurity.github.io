@@ -1,0 +1,175 @@
+
+/* THE TEAM */
+
+#team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#team_title {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#team_title_leftbracket {
+    color: var(--accent-color);
+
+    margin-right: 50px;
+}
+
+#team_title_rightbracket {
+    color: var(--accent-color);
+
+    margin-left: 50px;
+}
+
+#team_subtitle {
+    width: 80vw;
+    font-size: 28px;
+
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.team_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+
+    margin-bottom: 50px;
+
+    flex-wrap: wrap;
+}
+
+.team_member {
+    width: 400px;
+    height: 460px;
+
+    background-color: #171717;
+    border-radius: 25px;
+
+    position: relative;
+
+    --gradient-border-width: 2px;
+}
+
+.team_member::before {
+    content: '';
+
+    position: absolute;
+    width: calc(100%+2*var(--gradient-border-width));
+    height: calc(100%+2*var(--gradient-border-width));
+
+    top: calc(-1*var(--gradient-border-width));
+    left: calc(-1*var(--gradient-border-width));
+    right: calc(-1*var(--gradient-border-width));
+    bottom: calc(-1*var(--gradient-border-width));
+    
+    z-index: -1;
+    
+    border-radius: 25px;
+}
+
+.team_member_name {
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 28px;
+    margin-top: 0px;
+
+    filter: brightness(1.4);
+    text-align: left;
+}
+
+.team_member_role {
+    font-style: italic;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 16px;
+    margin-top: 0px;
+
+    filter: brightness(1.4);
+    text-align: left;
+}
+
+.team_member_pic {
+    width: 80px;
+    height: 80px;
+
+    border: none;
+    border-radius: 15px;
+
+    border: 3px solid;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.team_member_bio {
+    position: absolute;
+
+    top: 130px;
+    left: 30px;
+    right: 30px;
+    
+    font-size: 18px;
+
+    margin-top: 0px;
+    text-align: center;
+
+    filter: brightness(1.75);
+    text-align: left;
+}
+
+#tm_nathan {
+    color: darkred;
+}
+
+#tm_nathan::before {
+    background: conic-gradient(#00000000 0deg, #00000000 90deg, darkred 135deg, #00000000 180deg,
+    #00000000 270deg, darkred 315deg, #00000000 360deg);
+}
+
+#tm_omkar {
+    color: #2E6F40;
+}
+
+#tm_omkar::before {
+    background: conic-gradient(#00000000 0deg, #00000000 90deg, #2E6F40 135deg, #00000000 180deg,
+    #00000000 270deg, #2E6F40 315deg, #00000000 360deg);
+}
+
+#tm_ekansh {
+    color: #0076CE;
+}
+
+#tm_ekansh::before {
+    background: conic-gradient(#00000000 0deg, #00000000 90deg, #0076CE 135deg, #00000000 180deg,
+    #00000000 270deg, #0076CE 315deg, #00000000 360deg);
+}
+
+#tm_aryan {
+    color: #e06c9f;
+}
+
+#tm_aryan::before {
+    background: conic-gradient(#00000000 0deg, #00000000 90deg, #e06c9f 135deg, #00000000 180deg,
+    #00000000 270deg, #e06c9f 315deg, #00000000 360deg);
+}
+
+#tm_william {
+    color: #ff3333;
+}
+
+#tm_william::before {
+    background: conic-gradient(#00000000 0deg, #00000000 90deg, #ff3333 135deg, #00000000 180deg,
+    #00000000 270deg, #ff3333 315deg, #00000000 360deg);
+}

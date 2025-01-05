@@ -1,0 +1,56 @@
+
+/* SOTERIA'S STORY */
+
+#story_title {
+    margin-top: 150px;
+    font-size: 40px;
+
+    margin-bottom: 0px;
+}
+
+#story_stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 100px;
+}
+
+.story_stat {
+    width: 300px;
+}
+
+.story_stat_value {
+    color: var(--accent-color);
+    font-size: 90px;
+}
+
+#story_impactful_point {
+    font-size: 60px;
+    color: var(--accent-color);
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+#story_impactful_point_underline {
+    width: 800px;
+    height: 5px;
+    border: none;
+    background-color: var(--accent-color);
+    margin-top: 20px;
+}
+
+#story_desc {
+    font-size: 30px;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.accent {
+    color: var(--accent-color);
+    text-shadow: 0 0 2px currentColor, 0 0 4px currentColor;
+}

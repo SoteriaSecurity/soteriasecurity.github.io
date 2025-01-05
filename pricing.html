@@ -19,13 +19,13 @@
   <body>
     <main>
       <div id="navbar">
-        <img id="navbar_logo" src="assets/images/logo.svg">
+        <img id="navbar_logo" src="assets/images/logo.svg" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
         <a class="navbar_link" href="index.html">Home</a>
         <a class="navbar_link" href="features.html">Features</a>
         <a class="navbar_link" href="impact.html">Impact</a>
         <a class="navbar_link" href="about.html">About</a>
-        <a class="navbar_link active" href="pricing.html">Pricing</a>
-        <button id="navbar_contact">Reserve a Demo</button>
+        <a class="navbar_link active" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Pricing</a>
+        <button id="navbar_contact" onclick="window.open('https:\/\/idp7al2lb7x.typeform.com/to/CzxPzDxT', '_blank')">Reserve a Demo</button>
       </div>
 
       <div id="header">
@@ -35,6 +35,10 @@
         </div>
 
         <img id="header_img" src="assets/images/ekansh.jpg">
+      </div>
+
+      <div id="whyus">
+        <p id="whyus_title"></p>
       </div>
       
       <div id="pricing">
@@ -195,15 +199,19 @@
         </div>
       </div>
 
-      <div id="contact">
-        <p id="contact_title">Request a Quote</p>
-        <p id="contact_subtitle">Work with us to choose a plan that's best for your community.</p>
+      <div id="footer">
+        <img id="footer_img" src="assets/images/logo.svg">
+        <div id="footer_text">
+          <p id="footer_name">Soteria<br>Security</p>
+          <p id="footer_slogan">Slogan Goes Here</p>
+        </div>
 
-        <input id="contact_subj" placeholder="Soteria Demo Request" value="Soteria Demo Request">
-        <br>
-        <textarea id="contact_main" placeholder="Message Body">Hello, I'd like to request a demo of Soteria for my community. Some more details about my situation are: </textarea>
-        <br>
-        <button id="contact_send" onclick="send_email()">Send</button>
+        <p id="footer_copyright">© 2025 Copyright Soteria. All rights reserved.</p>
+
+        <div id="footer_buttons">
+          <button onclick="window.open('https:\/\/idp7al2lb7x.typeform.com/to/RPdMPne5', '_blank')">Contact Us</button>
+          <button onclick="window.open('https:\/\/idp7al2lb7x.typeform.com/to/CzxPzDxT', '_blank')">Request a Demo</button>
+        </div>
       </div>
     </main>
     
