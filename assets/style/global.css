@@ -7,8 +7,8 @@
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 
     background: var(--bg-color);
     color: var(--main-color);
@@ -78,8 +78,8 @@ button {
     justify-content: center;
     align-items: center;
 
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 
     transition: transform 0.15s;
 }
@@ -93,8 +93,8 @@ button {
     content: '';
 
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
 
     width: 100vw;
     height: 5px;
@@ -103,7 +103,7 @@ button {
 }
 
 #navbar_logo {
-    padding-top: 0px;
+    padding-top: 0;
     height: 60px;
 
     margin-right: 100px;
@@ -150,8 +150,8 @@ button {
 /* HEADER */
 
 #header {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 
     width: 100vw;
     height: 90vh;
@@ -204,7 +204,7 @@ button {
     font-weight: 400;
     color: var(--accent-color);
 
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #header_subtitle {
@@ -219,8 +219,8 @@ button {
     height: 90vh;
 
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 
     z-index: 4;
 }
@@ -232,11 +232,7 @@ button {
     height: 200px;
 
     background-color: #1b1b1b;
-
-    margin-top: 100px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 100px 0 0;
 
     display: flex;
     align-items: center;
@@ -263,14 +259,14 @@ button {
     font-size: 40px;
     color: var(--accent-color);
     filter: brightness(1.5) drop-shadow(0 0 2px currentColor);
-    margin: 0px;
+    margin: 0;
     line-height: 45px;
 }
 
 #footer_slogan {
     margin-top: 20px;
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #footer_copyright {
