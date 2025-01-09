@@ -6,6 +6,30 @@ if (screen.width <= 700) {
 const NAVBAR = document.getElementById("navbar");
 let lastScrollY = window.scrollY;
 
+let hamburgerOpen = false;
+
+function hamburgerClick() {
+    const navLinks = NAVBAR.childNodes;
+
+    for (let i = 0; i < navLinks.length; i++) {
+        if (hamburgerOpen) {
+            if (navLinks[i].nodeName.toLowerCase() === 'a' || navLinks[i].nodeName.toLowerCase() === 'button') {
+                navLinks[i].style = "display: none; visibility: hidden; opacity: 0; animation: fade 1s;";
+            }
+
+            NAVBAR.style = "height: 50px; transition: height 0.25s ease-out;";
+        } else {
+            if (navLinks[i].nodeName.toLowerCase() === 'a' || navLinks[i].nodeName.toLowerCase() === 'button') {
+                navLinks[i].style = "display: flex; visibility: visible; opacity: 1; animation: fade 1s;";
+            }
+
+            NAVBAR.style = "height: 300px; transition: height 0.4s ease-in;";
+        }
+    }
+
+    hamburgerOpen = !hamburgerOpen;
+}
+
 /*
 window.addEventListener('scroll', () => {
     if (window.scrollY > lastScrollY) NAVBAR.classList.add('hidden');

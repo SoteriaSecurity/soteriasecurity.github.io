@@ -93,7 +93,7 @@
 
     text-align: left;
 
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 8px;
 }
 
@@ -125,14 +125,14 @@
 
 #contact_title {
     font-size: 60px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #contact_subtitle {
     font-size: 30px;
     color: var(--accent-color);
 
-    margin-top: 0px;
+    margin-top: 0;
 
     margin-bottom: 50px;
 }
@@ -175,10 +175,7 @@ textarea:focus {
 
     font-family: 'Geist Mono', 'IBM Plex Mono', sans-serif;
     font-size: 18px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     color: white;
 
     min-width: calc(100% - 20px);

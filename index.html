@@ -19,6 +19,11 @@
   <body>
     <main>
       <div id="navbar">
+        <div id="hamburger" onclick="hamburgerClick()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <img id="navbar_logo" src="assets/images/logo.svg" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
         <a class="navbar_link active" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Home</a>
         <a class="navbar_link" href="features.html">Features</a>
@@ -27,7 +32,6 @@
         <a class="navbar_link" href="pricing.html">Pricing</a>
         <button id="navbar_contact" onclick="window.open('https:\/\/idp7al2lb7x.typeform.com/to/CzxPzDxT', '_blank')">Reserve a Demo</button>
       </div>
-
       <div id="landing">
         <img id="landing_logo" src="assets/images/logo.svg">
         <p id="landing_title">Soteria Security</p>
@@ -94,22 +98,25 @@
       </div>
 
       <div id="footer">
-        <img id="footer_img" src="assets/images/logo.svg">
-        <div id="footer_text">
-          <p id="footer_name">Soteria<br>Security</p>
-          <p id="footer_slogan">Slogan Goes Here</p>
+        <div id="footer_left">
+          <div id="footer_left_content">
+            <img id="footer_img" src="assets/images/logo.svg">
+            <div id="footer_text">
+              <p id="footer_name">Soteria<br>Security</p>
+              <p id="footer_slogan">Slogan Goes Here</p>
+            </div>
+          </div>
+
+          <p id="footer_copyright">© 2025 Copyright Soteria. All rights reserved.</p>
         </div>
-
-        <p id="footer_copyright">© 2025 Copyright Soteria. All rights reserved.</p>
-
         <div id="footer_buttons">
           <button onclick="window.open('https:\/\/idp7al2lb7x.typeform.com/to/RPdMPne5', '_blank')">Contact Us</button>
           <button onclick="window.open('https:\/\/idp7al2lb7x.typeform.com/to/CzxPzDxT', '_blank')">Request a Demo</button>
         </div>
       </div>
     </main>
-    
 
-    <script src="assets/script/index.js"></script>
+
+    <script src="assets/script/global.js"></script>
   </body>
 </html>

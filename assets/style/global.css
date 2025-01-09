@@ -7,8 +7,8 @@
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 
     background: var(--bg-color);
     color: var(--main-color);
@@ -17,6 +17,7 @@ body {
     text-align: center;
 
     overflow-x: hidden;
+    width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -70,7 +71,7 @@ button {
 
     z-index: 10;
 
-    margin: none;
+    margin: 0;
     padding: 15px;
 
     display: flex;
@@ -78,8 +79,8 @@ button {
     justify-content: center;
     align-items: center;
 
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 
     transition: transform 0.15s;
 }
@@ -89,12 +90,28 @@ button {
     transition: transform 0.15s;
 }
 
+#hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+#hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
 #navbar::before {
     content: '';
 
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
 
     width: 100vw;
     height: 5px;
@@ -103,11 +120,9 @@ button {
 }
 
 #navbar_logo {
-    padding-top: 0px;
+    padding-top: 0;
     height: 60px;
-
-    margin-right: 100px;
-
+    margin-right: auto;
     cursor: pointer;
 }
 
@@ -123,6 +138,7 @@ button {
     color: var(--accent-color);
     filter: brightness(1.5) drop-shadow(0 0 2px currentColor);
     cursor: pointer;
+    transition: 0.2s;
 }
 
 .navbar_link.active {
@@ -135,7 +151,8 @@ button {
     width: 200px;
     height: 100%;
     
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: 30px;
 
     border: none;
     border-radius: 5px;
@@ -150,15 +167,14 @@ button {
 /* HEADER */
 
 #header {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 
     width: 100vw;
     height: 90vh;
 
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
 
     background-color: white;
@@ -204,7 +220,7 @@ button {
     font-weight: 400;
     color: var(--accent-color);
 
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #header_subtitle {
@@ -219,8 +235,8 @@ button {
     height: 90vh;
 
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 
     z-index: 4;
 }
@@ -232,16 +248,27 @@ button {
     height: 200px;
 
     background-color: #1b1b1b;
-
-    margin-top: 100px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 100px 0 0;
+    padding-top: 10px;
 
     display: flex;
     align-items: center;
 
     position: relative;
+}
+
+#footer_left {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 30px;
+    gap: 20px;
+}
+
+#footer_left_content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 #footer_img {
@@ -252,7 +279,6 @@ button {
 #footer_text {
     height: 160px;
     text-align: left;
-    margin-left: 30px;
 
     display: flex;
     flex-direction: column;
@@ -263,21 +289,21 @@ button {
     font-size: 40px;
     color: var(--accent-color);
     filter: brightness(1.5) drop-shadow(0 0 2px currentColor);
-    margin: 0px;
+    margin: 0;
     line-height: 45px;
 }
 
 #footer_slogan {
     margin-top: 20px;
     font-size: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 #footer_copyright {
-    position: absolute;
     bottom: 10px;
     width: 100%;
     text-align: center;
+    margin-top: auto;
 
     color: gray;
 }
@@ -308,4 +334,81 @@ button {
     font-family: 'Manrope', 'IBM Plex Mono', sans-serif;
     font-size: 26px;
     color: white;
+}
+
+@media (max-width: 1110px) {
+    #footer {
+        height: 240px;
+    }
+
+    #footer_left {
+        flex-direction: column;
+    }
+
+    #footer_copyright {
+        text-align: left;
+    }
+}
+
+@media (max-width: 852px) {
+    #navbar_logo {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    #navbar_contact {
+        margin: 10px 0 0;
+    }
+
+    .navbar_link, #navbar_contact {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 711px) {
+    #footer {
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+    }
+
+    #footer_copyright {
+        text-align: center;
+    }
+
+    #footer_left {
+        order: 2;
+    }
+
+    #footer_left_content {
+        margin: auto;
+    }
+
+    #footer_buttons {
+        margin: auto;
+        order: 1;
+    }
 }
