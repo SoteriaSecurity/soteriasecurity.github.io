@@ -7,7 +7,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 50px 0 0 0;
     padding: 0;
 
     background: var(--bg-color);
@@ -47,7 +47,7 @@ button {
 
 .accent {
     color: var(--accent-color);
-    text-shadow: 0 0 2px currentColor, 0 0 4px currentColor;
+    text-shadow: 0 0 2px currentColor, 0 0 1px currentColor;
 }
 
 .section_separator {
@@ -121,6 +121,7 @@ button {
 
 #navbar_logo {
     padding-top: 0;
+    padding-right: 75px;
     height: 60px;
     margin-right: auto;
     cursor: pointer;
@@ -148,8 +149,13 @@ button {
 }
 
 #navbar_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
     width: 200px;
-    height: 100%;
+    height: 50px;
     
     margin-left: auto;
     margin-right: 30px;
@@ -162,6 +168,7 @@ button {
     font-family: 'Geist Mono', 'IBM Plex Mono', sans-serif;
     font-size: 20px;
     color: white;
+    line-height: 1.0;
 }
 
 /* HEADER */
@@ -295,7 +302,7 @@ button {
 }
 
 #footer_img {
-    margin-left: 20px;
+    margin: 10px 20px 10px 20px;
     height: 160px;
 }
 
@@ -326,9 +333,13 @@ button {
 #footer_copyright {
     position: absolute;
     bottom: 10px;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
     text-align: center;
+
     margin-top: auto;
+    margin-left: 20px;
 
     color: gray;
 }
@@ -361,17 +372,14 @@ button {
     color: white;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1150px) {
     #footer {
         height: 240px;
+        padding-bottom: 20px;
     }
 
     #footer_left {
         flex-direction: column;
-    }
-
-    #footer_copyright {
-        text-align: left;
     }
 }
 
@@ -422,6 +430,7 @@ button {
 
     #footer_copyright {
         text-align: center;
+        margin: 0 0 10px 0;
     }
 
     #footer_left {
@@ -435,5 +444,9 @@ button {
     #footer_buttons {
         margin: auto;
         order: 1;
+    }
+
+    #footer_buttons {
+        margin-bottom: 75px;
     }
 }

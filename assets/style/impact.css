@@ -24,6 +24,8 @@
 .story_stat_value {
     color: var(--accent-color);
     font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
 #story_impactful_point {
@@ -43,6 +45,7 @@
 
 #story_desc {
     font-size: 30px;
+    font-weight: 350;
 
     margin-top: 100px;
     margin-left: 10vw;
@@ -51,7 +54,7 @@
 
 #story_finalimpact {
     font-size: 60px;
-    margin-bottom: 200px;
+    margin: 60px 20px 200px 20px;
 }
 
 .underline {

@@ -30,6 +30,7 @@
     height: 500px;
 
     position: relative;
+    overflow: hidden;
 }
 
 #product_view img {    
@@ -101,10 +102,8 @@
 }
 
 .product_desc_selector_label {
-    padding-left: 20px;
-    padding-right: 20px;
-
     height: 100%;
+    width: 160px;
 
     color: #aaaaaa;
     font-family: 'Geist Mono', 'IBM Plex Mono', sans-serif;
@@ -175,11 +174,44 @@
 
 #product_desc_text {
     font-size: 24px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
     
     position: absolute;
     top: 80px;
+}
+
+@media (max-width: 1150px) {
+    #product_desc {
+        height: 250px;
+    }
+
+    #product_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #product_desc_selector {
+        display: flex;
+        order: -1;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    #product_view img {
+        margin: 0 0 0 20px;
+        height: 100%;
+    }
+
+    #product_img1, #product_img2, #product_img3 {
+        order: -1;
+    }
+
+    #product_desc_text {
+        position: static;
+        top: auto;
+        width: 80vw;
+    }
 }
 
 #adaptable_text {
