@@ -41,8 +41,15 @@ window.addEventListener('scroll', () => {
 
 
 /* PRODUCT DESCRIPTION */
-const PRODUCT_DESC_SELECTOR = document.getElementById("product_desc_selector")
-const PRODUCT_DESC_SELECTOR_BG = document.getElementById("product_desc_selector_bg");
+let PRODUCT_DESC_SELECTOR;
+let PRODUCT_DESC_SELECTOR_BG;
+if (screen.width > 1150) {
+    PRODUCT_DESC_SELECTOR = document.getElementById("product_desc_selector")
+    PRODUCT_DESC_SELECTOR_BG = document.getElementById("product_desc_selector_bg");
+} else {
+    PRODUCT_DESC_SELECTOR = document.getElementById("product_desc_selector_alt")
+    PRODUCT_DESC_SELECTOR_BG = document.getElementById("product_desc_selector_bg_alt");
+}
 var PRODUCT_DESC_IDX = 1;
 
 const MESSAGES = [
@@ -113,7 +120,7 @@ function product_select_desc(idx) {
     const oldIDX = PRODUCT_DESC_IDX;
     PRODUCT_DESC_IDX = idx;
 
-    if (oldIDX != idx) {
+    if (oldIDX !== idx) {
         fadeOutAndMove(document.getElementById(`product_img${oldIDX}`), 300, (oldIDX < idx ? -1 : 1) * 100);
         fadeInAndMove(document.getElementById(`product_img${idx}`), 300, (oldIDX < idx ? 1 : -1) * 100);
     }
@@ -137,5 +144,5 @@ product_init_desc();
 /* CONTACT */
 
 function send_email() {
-    window.open(`mailto:support@soteriasecurity.com?subject=${document.getElementById("contact_subj").value}&body=${document.getElementById("contact_main").value}`);
+    window.open(`mailto:contact@soteriasecurity.com?subject=${document.getElementById("contact_subj").value}&body=${document.getElementById("contact_main").value}`);
 }
