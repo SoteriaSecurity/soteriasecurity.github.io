@@ -423,29 +423,31 @@ button {
 @media (max-width: 711px) {
     #footer {
         flex-direction: column;
-        height: 100%;
-        gap: 20px;
+        height: 540px;
+        gap: 0;
     }
 
     #footer_copyright {
         text-align: center;
         margin: 0 0 10px 0;
+        width: 100vw;
     }
 
     #footer_left {
         order: 2;
-    }
-
-    #footer_left_content {
-        margin: auto;
-    }
-
-    #footer_buttons {
-        margin: auto;
-        order: 1;
+        height: 180px;
     }
 
     #footer_buttons {
         margin-bottom: 75px;
+    }
+
+    #footer_left_content {
+        margin: 0 auto 90px auto;
+    }
+
+    #footer_buttons {
+        margin: 10px auto;
+        order: 1;
     }
 }
