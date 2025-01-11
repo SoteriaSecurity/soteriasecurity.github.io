@@ -23,7 +23,7 @@ function hamburgerClick() {
                 navLinks[i].style = "display: flex; visibility: visible; opacity: 1; animation: fade 1s;";
             }
 
-            NAVBAR.style = "height: 300px; transition: height 0.4s ease-in;";
+            NAVBAR.style = "height: 350px; transition: height 0.4s ease-in;";
         }
     }
 
