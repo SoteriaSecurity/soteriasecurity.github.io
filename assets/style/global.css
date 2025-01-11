@@ -177,7 +177,7 @@ button {
     flex-direction: column;
     justify-content: center;
 
-    background-color: white;
+    background-color: black;
 
     border-bottom: 2px solid var(--accent-color);
 
@@ -197,7 +197,8 @@ button {
 
     background: black;
     transform-origin: top left;
-    clip-path: polygon(0 0, 70% 0, 50% 100%, 0 100%); /* Fine-tune the slant */
+    clip-path: polygon(0 0, 60% 0, 50% 100%, 0 100%); /* Fine-tune the slant */
+    animation: clipPathAnim 0.6s ease-out;
     color: white;
     display: flex;
     align-items: center;
@@ -206,9 +207,18 @@ button {
     z-index: 5;
 }
 
+@keyframes clipPathAnim {
+    from {
+        clip-path: polygon(0 0, 110% 0, 100% 100%, 0 100%); /* Fine-tune the slant */
+    }
+    to {
+        clip-path: polygon(0 0, 60% 0, 50% 100%, 0 100%); /* Fine-tune the slant */
+    }
+}
+
 #header_text {
     text-align: left;
-    margin-left: 10vw;
+    margin-left: 5vw;
 
     margin-bottom: 5vh;
 
@@ -239,6 +249,19 @@ button {
     right: 0;
 
     z-index: 4;
+    
+    object-fit: cover;
+
+    animation: fadeIn 0.4s linear;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
 }
 
 /* FOOTER */
@@ -277,6 +300,7 @@ button {
 }
 
 #footer_text {
+    margin-left: 20px;
     height: 160px;
     text-align: left;
 
@@ -295,11 +319,12 @@ button {
 
 #footer_slogan {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 0;
 }
 
 #footer_copyright {
+    position: absolute;
     bottom: 10px;
     width: 100%;
     text-align: center;

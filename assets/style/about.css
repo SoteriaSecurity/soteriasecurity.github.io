@@ -90,7 +90,7 @@
 .team_member_role {
     font-style: italic;
     position: absolute;
-    top: 50px;
+    top: 55px;
     left: 20px;
     font-size: 16px;
     margin-top: 0;
@@ -100,8 +100,8 @@
 }
 
 .team_member_pic {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 
     border-radius: 15px;
     border: 3px solid;
@@ -114,16 +114,16 @@
 .team_member_bio {
     position: absolute;
 
-    top: 130px;
+    top: 150px;
     left: 30px;
     right: 30px;
     
-    font-size: 18px;
+    font-size: 20px;
 
     margin-top: 0;
 
     filter: brightness(1.75);
-    text-align: left;
+    text-align: center;
 }
 
 #tm_nathan {
